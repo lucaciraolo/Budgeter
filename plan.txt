@@ -1,0 +1,25 @@
+Features:
+-
+
+
+
+Database:
+
+Monzo Transactions
+- Direct copy of Monzo Transactions
+
+Transactions
+_id
+start
+end
+amount
+description
+category_id
+
+Categories
+_id
+name
+parent_id
+
+Budgets
+_id
