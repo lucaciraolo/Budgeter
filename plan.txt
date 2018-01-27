@@ -8,21 +8,20 @@ Database:
 Monzo Transactions
 - Direct copy of Monzo Transactions
 
-Spend
+Spends
 _id
-start
-end
+timestamp
 amount
 description
 category_id
 
 Investments
 _id
-date_invested
+timestamp
 amount
 uses: [
     {
-        date,
+        timestamp,
         amount
     }
 ]
