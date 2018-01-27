@@ -8,13 +8,24 @@ Database:
 Monzo Transactions
 - Direct copy of Monzo Transactions
 
-Transactions
+Spend
 _id
 start
 end
 amount
 description
 category_id
+
+Investments
+_id
+date_invested
+amount
+uses: [
+    {
+        date,
+        amount
+    }
+]
 
 Categories
 _id
@@ -23,3 +34,22 @@ parent_id
 
 Budgets
 _id
+
+
+EXAMPLE OPERATIONS
+
+- Monzo transaction comes in
+- Options: {
+    add to spends + categorize
+    split into multiple spends + categorize
+    add to investments + categorize
+}
+
+
+- Use investment eg CASH
+- Mark usage date + amount
+- Move amount used to new spend
+
+- Use investment eg MILK
+- Mark usage date
+- If complete, split into spends
